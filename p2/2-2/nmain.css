@@ -1,0 +1,30 @@
+p {
+	/*font-family: Ludwig;*/
+	font-size: 12px;
+}
+body{
+	font-family: 'Press Start 2P', cursive;
+	/*line-height: 100px;*/
+	/*font-family: 'Open Sans', sans-serif;*/
+}
+
+
+.indent {
+	padding-left: 50px;
+	display: block;
+}
+
+.indent1 {
+	padding-left: 100px;
+	display: block;
+}
+
+.indent2 {
+	padding-left: 150px;
+	display: block;
+}
+
+@keyframes move {
+  from { transform: rotate(-10deg) translateY(0px); }
+  to   { transform: rotate(-10deg) translateY(-200px); }
+}

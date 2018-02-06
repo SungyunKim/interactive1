@@ -10,7 +10,7 @@
   <style>
 
 div {
-background:white;
+/*background:white;*/
 border-radius:20px;
 padding-left:20px;
 
@@ -18,14 +18,19 @@ padding-left:20px;
 
  .rotate1{
       
-      top: 270px;
-      transform: rotate(-10deg);
-      color: #F4D03F;
-    }
+    top: 270px;
+    top: 00px;
+    transform: rotate(30deg);
+    color: #F4D03F;
+    filter: blur(10px);
+    color: yellow; 
+    transition: all ease 1000ms;
+    mix-blend-mode: multiply;
+  }
 
 .rotate2{
       
-      top: 270px;
+      top: 200px;
       transform: rotate(-10deg);
       color: #884EA0  ;
     }
@@ -33,9 +38,17 @@ padding-left:20px;
 .rotate3{
       
       top: 270px;
-      transform: rotate(-10deg);
+      transform: rotate(-20deg);
       color: #2E86C1  ;
     }
+
+
+.rotate1:hover{
+ color: red;
+ 
+ filter: blur(0px);
+}
+ 
 
   </style>
 
@@ -53,7 +66,7 @@ padding-left:20px;
 <p>By Hossein Derakhshan<br></p>
 </h6>
 <div class="rotate3">
-    <h1><br><br><br>On the other hand, the most powerful web pages are those<p>&nbsp;&nbsp;&nbsp;&nbsp;that have many eyes upon them. Just like celebrities who draw<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a kind of power from the millions of human eyes gazing<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at them any given time, web pages can capture and distribute <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;their power through hyperlinks.</p></h1>
+    <h1><br><br><br>On the other hand, the most powerful web pages are those that have many eyes upon <p>them. Just like celebrities who draw a kind of power from the millions of human eyes gazing<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at them any given time, web pages can capture and distribute <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;their power through hyperlinks.</p></h1>
 
 <h2>
      <div class="rotate2">
