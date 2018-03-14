@@ -10,6 +10,11 @@
 
 
 $('document').ready(function() {
+
+	$('body').click(function(){
+		$(this).removeClass();
+		$(this).addClass('fade');
+	});
 	
 	$('#content').clone().insertAfter('#content');
 

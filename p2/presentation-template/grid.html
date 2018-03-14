@@ -1,5 +1,5 @@
-e
-<!DOCTYPE html>
+
+<!DOCTYPE htm
 <html>
 
 <head>
@@ -7,6 +7,10 @@ e
   <meta charset="utf-8" />
   <style>
   
+
+  body{background-color: white;
+
+   /* background-image: url("bb1.jpg");*/}
   * {
     margin: 0px;
     padding: 0px;
@@ -22,6 +26,7 @@ e
     margin: auto;
 
   }
+
   
   .item {
     display: flex;
@@ -40,8 +45,15 @@ e
     margin-left:-40px;
   }
 
+  .fade {
+    animation-name: example;
+    animation-duration: 1s;
+  }
 
-}
+    @keyframes example {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
 
   </style>
 </head>
@@ -58,7 +70,7 @@ e
   <div id="grid">
     <!-- grid items -->
     
-    <div class="item"><img src="img/r1 copy.png"></div>
+    <div class="item"><img src="img/r1 copy.png" ></div>
     <div class="item"><img src="img/r2.png"></div>
     <div class="item"><img src="img/r3.png"></div>
     <div class="item"><img src="img/r4.png"></div>
