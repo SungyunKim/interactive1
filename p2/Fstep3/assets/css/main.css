@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+    background: url("https://unsplash.it/2048/2048?random") no-repeat center;
+    background-size: cover;
+}
+
+.searchlight {
+    position: absolute;
+    z-index: 100;
+    height: 300px;
+    width: 300px;
+    border-width: 100vh 100vw;
+    border-style: solid;
+    border-color: #000;
+    top: -100vh;
+    left: -100vw;
+    cursor: none;
+    background: #000;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.searchlight.on {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 60%,rgba(0,0,0,1) 100%); /* W3C */
+}
+
+
+
+* {margin: 0px; padding 0px;}
+
+body {
+	position: relative;
+	min-height: 100vh;
+	min-width: 100vw;
+	background-color: black;
+	color: white;
+}
+
+#theImg{
+	position: absolute;
+	width: 30px;
+	height: auto;
+}
+
+#position {
+	position: absolute;
+}
+
+#desktop{
+	opacity: 1;
+	color: white;
+}
+
+#tablet, #mobile, #print {
+	opacity: 0;
+}
+
+/* iPad */
+@media (min-width: 668px) and (max-width: 1024px) {
+	body {
+		background: gray;
+	}
+
+	#tablet{
+		opacity: 1;
+	}
+
+	#desktop, #mobile, #print {
+		opacity: 0;
+	}
+
+}
+
+/* iPhone 6 */
+@media (min-width: 375px) and (max-width: 667px) {
+
+	body {
+		background: white;
+	}
+
+	#mobile{
+		opacity: 1;
+	}
+
+	#desktop, #tablet, #print {
+		opacity: 0;
+	}
+}
+
+/* print */
+@media print {
+
+	body {
+		background: white;
+	}
+
+	#print{
+		opacity: 1;
+	}
+
+	#desktop, #tablet, #mobile {
+		opacity: 0;
+	}
+}

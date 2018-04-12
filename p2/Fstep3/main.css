@@ -1,21 +1,7 @@
-* {margin: 0px; padding 0px;}
+* { margin: 0px; padding: 0px; }
 
 body {
-	position: relative;
-	min-height: 100vh;
-	min-width: 100vw;
-	background-color: black;
-	color: white;
-}
-
-#theImg{
-	position: absolute;
-	width: 30px;
-	height: auto;
-}
-
-#position {
-	position: absolute;
+	background: black;
 }
 
 #desktop{
@@ -28,9 +14,9 @@ body {
 }
 
 /* iPad */
-@media (min-width: 668px) and (max-width: 1024px) {
+@media (min-width: 668px) and (max-width: 1024px) { 
 	body {
-		background: gray;
+		background: grey;
 	}
 
 	#tablet{
@@ -44,8 +30,8 @@ body {
 }
 
 /* iPhone 6 */
-@media (min-width: 375px) and (max-width: 667px) {
-
+@media (min-width: 375px) and (max-width: 667px) { 
+	
 	body {
 		background: white;
 	}
@@ -61,7 +47,7 @@ body {
 
 /* print */
 @media print {
-
+	
 	body {
 		background: white;
 	}
