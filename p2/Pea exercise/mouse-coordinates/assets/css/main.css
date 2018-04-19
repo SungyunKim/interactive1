@@ -1,0 +1,39 @@
+* {margin: 0px; padding 0px;}
+
+body {
+	position: relative;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+#position {
+	position: absolute;
+}
+
+
+div[class^="page"] {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 50px;	
+}
+
+
+.break	{ display: none; }
+
+@media print {
+	.break	{ display: block; page-break-before: always; }
+	
+	div[class^="page"] { 
+		position: relative; 
+		font-size: 80px;
+	}
+
+}
