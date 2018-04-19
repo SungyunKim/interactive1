@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	$('body').on( "mousemove", function(e) {
 		// move #position on mouse move
-		$('#position').css({ 'top': e.pageY+'px', 'left': e.pageX+'px' });
+		$('#position').css({ 'top': e.pageY+'px', 'left': e.pageX+'px', 'color': getRandomColor,});
 		// copy element on mousemove
 		var clone = $('#position').clone();
 		$('.page-'+n).append(clone);
@@ -18,5 +18,10 @@ $(document).ready(function(){
 		$('body').append('<div class="break"></div><div class="page-'+n+'"></div>');
 	});
 
+	var getRandomColor = function(){
+		var color = ["red","Yellow","blue","#467bd7"]
+		var randomColor = Math.floor(Math.random()*4)
+		return color[randomColor]
+	};
 
 });
