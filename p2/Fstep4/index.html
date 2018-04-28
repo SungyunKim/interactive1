@@ -5,25 +5,43 @@
   <meta charset="UTF-8">
   <title>CSS Spotlight Effect</title>
   
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+  	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="js/index.js"></script>
 
   
 </head>
 
+<style>
+	.appear{
+		opacity: 1;
+	}
+
+/*	.canvas{
+		
+		width: 17in;
+		height: 11in;
+*/
+	}
+
+</style>
+
 <body>
 
-  <div class="canvas"></div>
-<div class="searchlight"></div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-  
-
-    <script  src="js/index.js"></script>
-
-
-
+  <div class="canvas">
+  	<img id="bg" src="img/fp1.png">
+  	<div class="searchlight"></div>
+  	<div class="after-text">
+  		Click!
+  	</div>
+  </div>
+  <div id="position"></div>
+ <!--  
+  <div id="print">
+	<img src="vv22.png">
+  </div>
+ -->
 
 </body>
 
