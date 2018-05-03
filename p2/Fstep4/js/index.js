@@ -5,11 +5,11 @@ $(document).ready(function(){
 
 
     n = 1;
-    var items = Array('●');
+    var items = Array('●'); 
 
     $('body').on( "mousemove", function(e) {
         // move #position on mouse move
-        $('#position').css({ 'top': e.pageY+'px', 'left': e.pageX+'px', 'color': "black",});
+        $('#position').css({ 'top': e.pageY+'px', 'left': e.pageX+'px', 'color': getRandomColor,});
         // copy element on mousemove
         var clone = $('#position').clone();
         $('.page-'+n).append(clone);
@@ -23,12 +23,14 @@ $(document).ready(function(){
 
 
     $('body').click(function(){
-        $('.page-0').css({ 'opacity': 1,});
+        // $('.page-0').css({ 'opacity': 0,});
+        $('.after-text').fadeOut();
+        // $('.bgbg').addClass("bgbgmv");
     });
 
 
     var getRandomColor = function(){
-        var color = ["red","Yellow","blue","#467bd7"]
+        var color = ["red","Yellow","green","#467bd7"]
         var randomColor = Math.floor(Math.random()*4)
         return color[randomColor]
     };
