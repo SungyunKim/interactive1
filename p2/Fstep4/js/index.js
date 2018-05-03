@@ -30,8 +30,8 @@ $(document).ready(function(){
 
 
     var getRandomColor = function(){
-        var color = ["red","Yellow","green","#467bd7"]
-        var randomColor = Math.floor(Math.random()*4)
+        var color = ["#e70000","#3ea521","#f0ff00"]
+        var randomColor = Math.floor(Math.random()*3)
         return color[randomColor]
     };
 
