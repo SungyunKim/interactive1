@@ -1,7 +1,0 @@
-#pop {
-position: absolute;
-top: 100px;
-left: 100px;
-transform-origin: top left;
-tranform: rotate(90deg);
-}
