@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>navi04</title>
+    <style>
+        * {margin:0; padding:0;}
+        ul,ol,li {list-style:none;}
+        a {text-decoration:none; color:#333;}
+        .list {
+            margin:100px auto;
+            width:1000px;
+        }
+        .list li {
+            width:200px;
+            height:40px;
+            line-height:40px;
+            float:left;
+        }
+        .list li a {
+            display:block;
+            background:url(img/gnb2.png) no-repeat #ddd;
+            text-indent:-9999px;
+            overflow:hidden;
+        }
+        .list .m1 a {background-position:center 0;
+            /* css3 */
+            border-radius: 10px 0px 0px 10px;
+            box-shadow: -2px 2px 2px 2px rgba(0,0,0,0.5);
+
+        }
+        .list .m2 a {background-position:center -40px;}
+        .list .m3 a {background-position:center -80px;}
+        .list .m4 a {background-position:center -120px;}
+        .list .m5 a {background-position:center -160px;}
+        
+        .list li a:hover {background-color:#333;}
+        .list .m1 a:hover {background-position:center -200px;}
+        .list .m2 a:hover {background-position:center -240px;}
+        .list .m3 a:hover {background-position:center -280px;}
+        .list .m4 a:hover {background-position:center -320px;}
+        .list .m5 a:hover {background-position:center -360px;
+            
+        }
+
+        button {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd;
+            /* css3 */
+            border-radius: 200px;
+            border: 2px solid #000;
+
+        }
+
+        button:hover {
+            transform: scale(1.5) rotate(-45deg) translate(20px, 50px);
+        }
+        
+
+
+        }
+    </style>
+</head>
+<body>
+    <button>HOME</button>
+    <ul class="list">
+        <li class="m1"><a href="#">HOME</a></li>
+        <li class="m2"><a href="#">PROFILE</a></li>
+        <li class="m3"><a href="#">PORTFOLIO</a></li>
+        <li class="m4"><a href="#">GALLERY</a></li>
+        <li class="m5"><a href="#">BOARD</a></li>
+    </ul>
+</body>
+</html>
